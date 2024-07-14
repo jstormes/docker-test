@@ -1,0 +1,7 @@
+services:
+  ssh-test:
+    build:
+      context: .
+      dockerfile: ssh.dockerfile
+      ssh: # New functionality in PRs
+        - default
