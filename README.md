@@ -4,6 +4,19 @@ Project to test docker setup on computer
 
 This project is a test of the ssh-agent to docker build setup.
 
+# To run the test
+
+```
+docker compose build ssh-test
+```
+
+Look for something like this in the output:
+
+```
+Hi jstormes! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+If you see the above message, the ssh-agent to Docker connection is working properly.
 
 # Make sure ssh is set up properly and GitHub is working
 
